@@ -1,0 +1,15 @@
+{
+  "name": "image_slider",
+  "version": "1.0.0",
+  "description": "slide show",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Allen Daniels",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack-cli": "^5.0.1"
+  }
+}

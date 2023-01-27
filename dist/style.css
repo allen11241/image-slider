@@ -1,0 +1,90 @@
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.frame {
+    width: 1024px;
+    height: 576px;
+    padding: 2rem;
+    border: 1px solid red;
+    border-radius: 1rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    width: 90%;
+    background: red;
+    border-radius: 2rem;
+}
+
+.circle {
+    width:16px;
+    height: 16px;
+    background: black;
+    border-radius: 50%;
+    margin: 1rem;
+    box-sizing: border-box;
+}
+
+#circle-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#btn-previous {
+}
+
+.slider-button:hover {
+    cursor: pointer;
+    -webkit-transform:scale(1.4)
+}
+
+.circle:hover {
+    cursor: pointer;
+    -webkit-transform:scale(1.4)
+}
+
+.circle-selected {
+    background-color: white;
+}
+
+#square {
+    width: 2rem;
+    height: 2rem;
+    background: blue;
+}
+
+#square:hover {
+    transition: opacity 300ms ease-in-out 1s;
+}
+
+#frame img {
+    position:absolute;
+    opacity: 0;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    opacity:0;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+  }
+
+  #frame img.image-selected {
+    opacity: 1;
+  }
